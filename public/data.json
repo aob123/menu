@@ -4,34 +4,467 @@
     "id": 1,
     "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80",
     "address": "Storgatan 11",
-    "tele": "0611 190 00"
+    "tele": "0611 190 00",
+    "menu": [
+      {
+        "name": "Pizza",
+        "items": [
+          {
+            "id": "0101",
+            "name": "Vesuvio",
+            "ingredients": ["skinka,", "ost", "tomatsås"],
+            "price": "110",
+            "size": ["S", "M", "L", "familjepizza"],
+            "image": "url"
+          },
+          {
+            "id": "0102",
+            "name": "Gangster",
+            "ingredients": ["skinka,", "ost", "tomatsås"],
+            "price": "110",
+            "size": ["S", "M", "L", "family"],
+            "image": "url"
+          },
+          {
+            "id": "0103",
+            "name": "Capriciosa",
+            "ingredients": ["skinka,", "ost", "champinjoner", "tomatosås"],
+            "price": "100",
+            "size": ["S", "M", "L", "family"],
+            "image": "url"
+          }
+        ]
+      },
+      {
+        "name": "Kebab",
+        "items": [
+          {
+            "id": "010101",
+            "name": "Kebabtalrik",
+            "ingredients": ["Kebab (nöt)", "Pommes frites", "Sallad"],
+            "price": "100",
+            "size": ["M", "L"],
+            "image": "url"
+          }
+        ]
+      },
+      {
+        "name": "Rullar",
+        "items": []
+      },
+      {
+        "name": "Dricka",
+        "items": []
+      }
+    ]
   },
   {
     "name": "APA",
-    "id": 2
+    "id": 2,
+    "image": "https://images.unsplash.com/photo-1561758033-d89a9ad46330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80",
+    "address": "Storgatan 11",
+    "tele": "0611 190 00",
+    "menu": [
+      {
+        "name": "Burgare",
+        "items": [
+          {
+            "id": "0101",
+            "name": "Vesuvio",
+            "ingredients": ["skinka,", "ost", "tomatsås"],
+            "price": "110",
+            "size": ["S", "M", "L", "familjepizza"],
+            "image": "url"
+          },
+          {
+            "id": "0102",
+            "name": "Gangster",
+            "ingredients": ["skinka,", "ost", "tomatsås"],
+            "price": "110",
+            "size": ["S", "M", "L", "family"],
+            "image": "url"
+          },
+          {
+            "id": "0103",
+            "name": "Capriciosa",
+            "ingredients": ["skinka,", "ost", "champinjoner", "tomatosås"],
+            "price": "100",
+            "size": ["S", "M", "L", "family"],
+            "image": "url"
+          }
+        ]
+      },
+      {
+        "name": "Tillbehör",
+        "items": [
+          {
+            "id": "010101",
+            "name": "Kebabtalrik",
+            "ingredients": ["Kebab (nöt)", "Pommes frites", "Sallad"],
+            "price": "100",
+            "size": ["M", "L"],
+            "image": "url"
+          }
+        ]
+      },
+      {
+        "name": "Dryck",
+        "items": []
+      }
+    ]
   },
   {
     "name": "Engströms",
-    "id": 3
+    "id": 3,
+    "image": "https://images.unsplash.com/photo-1529543544282-ea669407fca3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
+    "address": "Storgatan 11",
+    "tele": "0611 190 00",
+    "menu": [
+      {
+        "name": "Pizza",
+        "items": [
+          {
+            "id": "0101",
+            "name": "Vesuvio",
+            "ingredients": ["skinka,", "ost", "tomatsås"],
+            "price": "110",
+            "size": ["S", "M", "L", "familjepizza"],
+            "image": "url"
+          },
+          {
+            "id": "0102",
+            "name": "Gangster",
+            "ingredients": ["skinka,", "ost", "tomatsås"],
+            "price": "110",
+            "size": ["S", "M", "L", "family"],
+            "image": "url"
+          },
+          {
+            "id": "0103",
+            "name": "Capriciosa",
+            "ingredients": ["skinka,", "ost", "champinjoner", "tomatosås"],
+            "price": "100",
+            "size": ["S", "M", "L", "family"],
+            "image": "url"
+          }
+        ]
+      },
+      {
+        "name": "Kebab",
+        "items": [
+          {
+            "id": "010101",
+            "name": "Kebabtalrik",
+            "ingredients": ["Kebab (nöt)", "Pommes frites", "Sallad"],
+            "price": "100",
+            "size": ["M", "L"],
+            "image": "url"
+          }
+        ]
+      },
+      {
+        "name": "Rullar",
+        "items": []
+      },
+      {
+        "name": "Dricka",
+        "items": []
+      }
+    ]
   },
   {
     "name": "Big Boy",
-    "id": 4
+    "id": 4,
+    "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80",
+    "address": "Storgatan 11",
+    "tele": "0611 190 00",
+    "menu": [
+      {
+        "name": "Pizza",
+        "items": [
+          {
+            "id": "0101",
+            "name": "Vesuvio",
+            "ingredients": ["skinka,", "ost", "tomatsås"],
+            "price": "110",
+            "size": ["S", "M", "L", "familjepizza"],
+            "image": "url"
+          },
+          {
+            "id": "0102",
+            "name": "Gangster",
+            "ingredients": ["skinka,", "ost", "tomatsås"],
+            "price": "110",
+            "size": ["S", "M", "L", "family"],
+            "image": "url"
+          },
+          {
+            "id": "0103",
+            "name": "Capriciosa",
+            "ingredients": ["skinka,", "ost", "champinjoner", "tomatosås"],
+            "price": "100",
+            "size": ["S", "M", "L", "family"],
+            "image": "url"
+          }
+        ]
+      },
+      {
+        "name": "Kebab",
+        "items": [
+          {
+            "id": "010101",
+            "name": "Kebabtalrik",
+            "ingredients": ["Kebab (nöt)", "Pommes frites", "Sallad"],
+            "price": "100",
+            "size": ["M", "L"],
+            "image": "url"
+          }
+        ]
+      },
+      {
+        "name": "Rullar",
+        "items": []
+      },
+      {
+        "name": "Dricka",
+        "items": []
+      }
+    ]
   },
   {
     "name": "Curry Masala",
-    "id": 5
+    "id": 5,
+    "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80",
+    "address": "Storgatan 11",
+    "tele": "0611 190 00",
+    "menu": [
+      {
+        "name": "Pizza",
+        "items": [
+          {
+            "id": "0101",
+            "name": "Vesuvio",
+            "ingredients": ["skinka,", "ost", "tomatsås"],
+            "price": "110",
+            "size": ["S", "M", "L", "familjepizza"],
+            "image": "url"
+          },
+          {
+            "id": "0102",
+            "name": "Gangster",
+            "ingredients": ["skinka,", "ost", "tomatsås"],
+            "price": "110",
+            "size": ["S", "M", "L", "family"],
+            "image": "url"
+          },
+          {
+            "id": "0103",
+            "name": "Capriciosa",
+            "ingredients": ["skinka,", "ost", "champinjoner", "tomatosås"],
+            "price": "100",
+            "size": ["S", "M", "L", "family"],
+            "image": "url"
+          }
+        ]
+      },
+      {
+        "name": "Kebab",
+        "items": [
+          {
+            "id": "010101",
+            "name": "Kebabtalrik",
+            "ingredients": ["Kebab (nöt)", "Pommes frites", "Sallad"],
+            "price": "100",
+            "size": ["M", "L"],
+            "image": "url"
+          }
+        ]
+      },
+      {
+        "name": "Rullar",
+        "items": []
+      },
+      {
+        "name": "Dricka",
+        "items": []
+      }
+    ]
   },
   {
     "name": "Six",
-    "id": 6
+    "id": 6,
+    "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80",
+    "address": "Storgatan 11",
+    "tele": "0611 190 00",
+    "menu": [
+      {
+        "name": "Pizza",
+        "items": [
+          {
+            "id": "0101",
+            "name": "Vesuvio",
+            "ingredients": ["skinka,", "ost", "tomatsås"],
+            "price": "110",
+            "size": ["S", "M", "L", "familjepizza"],
+            "image": "url"
+          },
+          {
+            "id": "0102",
+            "name": "Gangster",
+            "ingredients": ["skinka,", "ost", "tomatsås"],
+            "price": "110",
+            "size": ["S", "M", "L", "family"],
+            "image": "url"
+          },
+          {
+            "id": "0103",
+            "name": "Capriciosa",
+            "ingredients": ["skinka,", "ost", "champinjoner", "tomatosås"],
+            "price": "100",
+            "size": ["S", "M", "L", "family"],
+            "image": "url"
+          }
+        ]
+      },
+      {
+        "name": "Kebab",
+        "items": [
+          {
+            "id": "010101",
+            "name": "Kebabtalrik",
+            "ingredients": ["Kebab (nöt)", "Pommes frites", "Sallad"],
+            "price": "100",
+            "size": ["M", "L"],
+            "image": "url"
+          }
+        ]
+      },
+      {
+        "name": "Rullar",
+        "items": []
+      },
+      {
+        "name": "Dricka",
+        "items": []
+      }
+    ]
   },
   {
     "name": "Seven",
-    "id": 7
+    "id": 7,
+    "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80",
+    "address": "Storgatan 11",
+    "tele": "0611 190 00",
+    "menu": [
+      {
+        "name": "Pizza",
+        "items": [
+          {
+            "id": "0101",
+            "name": "Vesuvio",
+            "ingredients": ["skinka,", "ost", "tomatsås"],
+            "price": "110",
+            "size": ["S", "M", "L", "familjepizza"],
+            "image": "url"
+          },
+          {
+            "id": "0102",
+            "name": "Gangster",
+            "ingredients": ["skinka,", "ost", "tomatsås"],
+            "price": "110",
+            "size": ["S", "M", "L", "family"],
+            "image": "url"
+          },
+          {
+            "id": "0103",
+            "name": "Capriciosa",
+            "ingredients": ["skinka,", "ost", "champinjoner", "tomatosås"],
+            "price": "100",
+            "size": ["S", "M", "L", "family"],
+            "image": "url"
+          }
+        ]
+      },
+      {
+        "name": "Kebab",
+        "items": [
+          {
+            "id": "010101",
+            "name": "Kebabtalrik",
+            "ingredients": ["Kebab (nöt)", "Pommes frites", "Sallad"],
+            "price": "100",
+            "size": ["M", "L"],
+            "image": "url"
+          }
+        ]
+      },
+      {
+        "name": "Rullar",
+        "items": []
+      },
+      {
+        "name": "Dricka",
+        "items": []
+      }
+    ]
   },
   {
     "name": "Eight",
-    "id": 8
+    "id": 8,
+    "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80",
+    "address": "Storgatan 11",
+    "tele": "0611 190 00",
+    "menu": [
+      {
+        "name": "Pizza",
+        "items": [
+          {
+            "id": "0101",
+            "name": "Vesuvio",
+            "ingredients": ["skinka,", "ost", "tomatsås"],
+            "price": "110",
+            "size": ["S", "M", "L", "familjepizza"],
+            "image": "url"
+          },
+          {
+            "id": "0102",
+            "name": "Gangster",
+            "ingredients": ["skinka,", "ost", "tomatsås"],
+            "price": "110",
+            "size": ["S", "M", "L", "family"],
+            "image": "url"
+          },
+          {
+            "id": "0103",
+            "name": "Capriciosa",
+            "ingredients": ["skinka,", "ost", "champinjoner", "tomatosås"],
+            "price": "100",
+            "size": ["S", "M", "L", "family"],
+            "image": "url"
+          }
+        ]
+      },
+      {
+        "name": "Kebab",
+        "items": [
+          {
+            "id": "010101",
+            "name": "Kebabtalrik",
+            "ingredients": ["Kebab (nöt)", "Pommes frites", "Sallad"],
+            "price": "100",
+            "size": ["M", "L"],
+            "image": "url"
+          }
+        ]
+      },
+      {
+        "name": "Rullar",
+        "items": []
+      },
+      {
+        "name": "Dricka",
+        "items": []
+      }
+    ]
   }
 ]

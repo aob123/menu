@@ -14,6 +14,21 @@ type Restaurant = {
   image: string;
   address: string;
   tele: string;
+  menu: [
+    {
+      name: string;
+      items: [
+        {
+          id: string;
+          name: string;
+          ingredients: string[];
+          price: string;
+          size: string[];
+          url: string;
+        }
+      ];
+    }
+  ];
 };
 
 const MenuPage = async ({ params }: Params) => {
@@ -31,7 +46,7 @@ const MenuPage = async ({ params }: Params) => {
           return (
             <section>
               <Hero {...restaurant} />
-              <Menu />
+              <Menu {...restaurant} />
             </section>
           );
         }
