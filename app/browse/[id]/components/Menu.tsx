@@ -1,44 +1,20 @@
 "use client";
 
-import { table } from "console";
-import { ReactEventHandler, useState } from "react";
+import { useState } from "react";
+import MenuItem from "./MenuItem";
 
-type Restaurant = {
-  name: string;
-  id: number;
-  image: string;
-  address: string;
-  tele: string;
-  menu: [
-    {
-      name: string;
-      items: [
-        {
-          id: string;
-          name: string;
-          ingredients: string[];
-          price: string;
-          size: string[];
-          url: string;
-        }
-      ];
-    }
-  ];
-};
-
-const Menu = ({ menu }: Restaurant) => {
-  const [selectedMenu, setSelecteMenu] = useState<any[]>(menu[0].items);
+const Menu = ({ menu }: Menu) => {
+  const [selectedMenu, setSelecteMenu] = useState<Item[]>(menu[0].items);
 
   const menuItem = (name: string) => {
     menu.map((item) => {
       if (name === item.name) {
-        console.log(item);
+        // console.log(item);
         setSelecteMenu(item.items);
       }
     });
   };
 
-  console.log("SELECTED", selectedMenu);
   return (
     <article className="w-full h-full  bg-green-300 ">
       <div className="flex lg:col-span-12 justify-center items-center w-full h-20 bg-gray-800 text-white">
@@ -61,16 +37,9 @@ const Menu = ({ menu }: Restaurant) => {
           </ul>
           <div>
             <div className="w-full ">
-              {selectedMenu.map((item: any, key: any) => {
-                return (
-                  <div
-                    className="flex flex-row  even:bg-gray-400 odd:bg-gray-200"
-                    key={item.id}
-                  >
-                    <p>{item.name}</p>
-                    <p>{item.price} kr</p>
-                  </div>
-                );
+              {selectedMenu.map((item) => {
+                // console.log("ITEM", item);
+                return <MenuItem item={item} key={item.id} />;
               })}
             </div>
           </div>
