@@ -122,6 +122,17 @@
         "name": "Dryck",
         "items": []
       }
+    ],
+    "information": [
+      {
+        "category": "Pizza",
+        "delivery": true,
+        "deliveryTime": "30",
+        "score": 4,
+        "website": "www.minikrogen.se",
+        "tele": "0611 190 00",
+        "updated": "2023-07-01"
+      }
     ]
   },
   {

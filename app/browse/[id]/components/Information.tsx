@@ -7,6 +7,10 @@ const Information = (restaurant: Restaurant) => {
     restaurant.information[0];
   console.log(restaurant.information[0].category);
 
+  if (!restaurant.information[0]) {
+    return <h1>Not available</h1>;
+  }
+
   return (
     <div
       className=" lg:grid grid-cols-12 grid-rows-1 w-full p-10 flex h-full bg-red-500"
