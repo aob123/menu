@@ -3,49 +3,52 @@
 import { useState } from "react";
 import MenuItem from "./MenuItem";
 
-const Menu = ({ menu }: Menu) => {
-  const [selectedMenu, setSelecteMenu] = useState<Item[]>(menu[0].items);
+const Menu = (restaurant: Restaurant) => {
+  const [showMenu, setShowMenu] = useState<Boolean>(false);
+  const [selectedMenu, setSelecteMenu] = useState<Item[]>(
+    restaurant.menu[0].items
+  );
+
+  //Set state to show / hide menu.
+  const showMenuFunction = () => {
+    setShowMenu((prevState) => !prevState);
+  };
 
   const menuItem = (name: string) => {
-    menu.map((item) => {
+    restaurant.menu.map((item) => {
       if (name === item.name) {
-        // console.log(item);
         setSelecteMenu(item.items);
       }
     });
   };
 
+  console.log(selectedMenu);
+
   return (
-    <article className="w-full h-full  bg-green-300 ">
-      <div className="flex lg:col-span-12 justify-center items-center w-full h-20 bg-gray-800 text-white">
-        <h1 className="text-3xl">Meny</h1>
-      </div>
-      <div className=" lg:grid  grid-cols-12 grid-rows-1 w-full h-96 p-10  ">
-        <div className="col-start-3 col-span-8 bg-red-100">
-          <ul className="flex w-full justify-evenly items-center p-4 text-l bg-black text-white">
-            {menu.map((item, key) => {
-              return (
-                <li
-                  className="hover:text-yellow-600 cursor-pointer active:text-yellow-600"
-                  onClick={() => menuItem(item.name)}
-                  key={item.name}
-                >
-                  {item.name}
-                </li>
-              );
-            })}
-          </ul>
-          <div>
-            <div className="w-full ">
-              {selectedMenu.map((item) => {
-                // console.log("ITEM", item);
-                return <MenuItem item={item} key={item.id} />;
-              })}
-            </div>
-          </div>
+    <div className=" lg:grid grid-cols-12 grid-rows-1 w-full p-10 flex h-full bg-red-500">
+      <div className="lg:col-start-3 lg:col-span-8 w-full  min-h-full flex flex-col">
+        <ul className="flex w-full justify-evenly items-center p-4 text-l bg-black/90 text-white rounded-2xl">
+          {restaurant.menu.map((item, key) => {
+            return (
+              <li
+                className="hover:text-yellow-600 cursor-pointer active:text-yellow-600"
+                onClick={() => menuItem(item.name)}
+                key={item.name}
+              >
+                {item.name}
+              </li>
+            );
+          })}
+        </ul>
+        {/*  */}
+        <div className="w-full h-full mt-10 ">
+          {selectedMenu.map((item: Item) => {
+            // console.log("ITEM", item);
+            return <MenuItem item={item} key={item.id} />;
+          })}
         </div>
       </div>
-    </article>
+    </div>
   );
 };
 
